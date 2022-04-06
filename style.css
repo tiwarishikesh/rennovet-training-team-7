@@ -104,7 +104,7 @@ body{
 
 .singleStatwrapper p{
     font-size:18px;
-    font0-weight:600;
+    font-weight:600;
     color:#999;
 }
 
@@ -127,4 +127,27 @@ body{
 
 .homePageSatisticsSection .beforeafterexample .singleStatwrapper:nth-of-type(3n)::before{
     display:none;    
+}
+
+home-content, services{
+    position:fixed;
+    width:100vw;
+    height:100vh;
+    overflow-y: scroll;
+    overflow-x:hidden;
+    top:0;
+    left:100vw;
+    transition: 0.3s;
+}
+
+body[path_part_0="home"] home-content{
+    left:0vw;
+}
+
+body[path_part_0="services"] services{
+    left:0vw;
+}
+
+body[path_part_0="services"] home-content{
+    left: -100vw;
 }

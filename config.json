@@ -1,0 +1,13 @@
+{
+    "ispwa": false,
+    "serviceurl": "/service/",
+    "html_path": "/rennovet/",
+    "components": {
+        "home-content": ["appbody", "Loading home"]
+        
+    },
+    "keys": {
+        
+    },
+    "env": "dev"
+}
