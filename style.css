@@ -1,0 +1,130 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,700&display=swap');
+
+body{
+    overflow-x: hidden;
+    background:#efefef;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+
+
+*{
+    margin: 0;
+    padding:px 0;
+}
+.landingPageCircle{
+    background:black;
+    width:200vw;
+    aspect-ratio:1;
+    border-radius:50%;
+    position:absolute;
+    top: -140vh;
+    left: 65vw;
+}
+
+.landingPageTitle{
+    font-family: 'Roboto', sans-serif;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-weight: 100;
+    text-shadow: 0 0 5px #7e7777;
+    color: #777;
+    font-size: 70px;
+}
+.landingPageTitle sup{
+    font-size: 32px;
+}
+.landingPageDesign{
+    margin-top: 20px;
+    color: rgb(141, 139, 139);
+    font-weight: 100;
+    font-size: 20px;
+    font-family: 'sans-serif';
+    margin-left: 20px;
+    font-family: 'Roboto', sans-serif;
+
+}
+.landingPageLeftUl{
+    color: #555;
+    font-weight: 100;
+    font-size: 30px;
+    list-style: none;
+    padding: 20px;
+
+}
+.landingPageLeftUl li{
+    color: #555;
+    font-family: 'Roboto', sans-serif;
+}
+
+.homePageSatisticsSection{
+    background: #efefefdd;
+    position: relative;
+    z-index: 1;
+    padding: 60px;
+    border-radius: 60px;
+    border:2px solid white;
+    box-shadow:0 0 3px 5px #dedede, 0 0 7px 10px #efefefdd, 0 0 12px 18px #fefefe;
+    backdrop-filter: blur(11px);
+    margin-top:100px;
+}
+
+.singleStatwrapper{
+    text-align: center;
+    color: #555;
+    padding:10px;
+    margin-bottom:15px;
+}
+
+.singleStatwrapper{
+    border-right:1px solid #dedede;
+    border-left:1px solid #d9d9d9;
+}
+
+.singleStatwrapper:nth-of-type(3n + 1){
+    border-left:0
+}
+
+.singleStatwrapper:nth-of-type(3n){
+    border-right:0
+}
+
+.singleStatwrapper i{
+    font-size:30px;
+    color: white;
+    text-shadow:1px -2px 0 #dedede;
+}
+
+.singleStatwrapper h4{
+    font-size:36px;
+    font-weight:300;
+    color:#747474;
+}
+
+.singleStatwrapper p{
+    font-size:18px;
+    font0-weight:600;
+    color:#999;
+}
+
+.homePageSatisticsSection .beforeafterexample .singleStatwrapper{
+    border: none;
+    position: relative;
+}
+
+.homePageSatisticsSection .beforeafterexample .singleStatwrapper::before{
+    content: '';
+    width: 3px;
+    height: 50%;
+    background: linear-gradient(90deg, #f1f1f1, #dfdfdf);
+    z-index: 1;
+    position: absolute;
+    top: 25%;
+    right: 0;
+    border-radius: 5px;
+}
+
+.homePageSatisticsSection .beforeafterexample .singleStatwrapper:nth-of-type(3n)::before{
+    display:none;    
+}
