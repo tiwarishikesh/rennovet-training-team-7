@@ -13,6 +13,29 @@ body{
     margin: 0;
     padding:px 0;
 }
+
+.w-full{
+    width:100%;
+}
+
+.p-0{
+    padding:0;
+}
+
+.p-l-0{
+    padding-left:0;
+}
+
+.p-r-0{
+    padding-right:0;
+}
+
+
+
+.landingBanner{
+    width:100vw;
+    height:100vh;
+}
 .landingPageCircle{
     background:black;
     width:200vw;
@@ -26,15 +49,24 @@ body{
 .landingPageTitle{
     font-family: 'Roboto', sans-serif;
     margin-top: 20px;
-    margin-left: 20px;
+    margin-left: 0;
     font-weight: 100;
     text-shadow: 0 0 5px #7e7777;
     color: #777;
-    font-size: 70px;
+    font-size: 44px;
 }
 .landingPageTitle sup{
     font-size: 32px;
 }
+
+.landingPageTextForm{
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
 .landingPageDesign{
     margin-top: 20px;
     color: rgb(141, 139, 139);
@@ -125,6 +157,16 @@ body{
     border-radius: 5px;
 }
 
+.landingPageSingleServiceWrapper{
+    margin-bottom:33px;
+}
+
+.landingPageSingleServiceContainer{
+    aspect-ratio:1;
+    border: 1px solid #cecece;
+    border-radius: 10px;
+}
+
 .homePageSatisticsSection .beforeafterexample .singleStatwrapper:nth-of-type(3n)::before{
     display:none;    
 }
@@ -150,4 +192,26 @@ body[path_part_0="services"] services{
 
 body[path_part_0="services"] home-content{
     left: -100vw;
+}
+
+input{
+    width:100%;
+    border: 1px solid #efefef !important;
+    padding:12px;
+    margin-bottom: 12px;
+    border-radius: 12px;
+    outline: none;
+    color: #666666;
+}
+
+.button{
+    background: #999;
+    padding: 9px;
+    border-radius: 1000px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #dedede;
+    font-size: 18px;
+    letter-spacing: 2px;
+    cursor: pointer;
 }
