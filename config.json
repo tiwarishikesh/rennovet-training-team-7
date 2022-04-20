@@ -1,7 +1,7 @@
 {
     "ispwa": false,
     "serviceurl": "/service/",
-    "html_path": "/rennovet/",
+    "html_path": "/",
     "components": {
         "home-content": ["appbody", "Loading home"]
         

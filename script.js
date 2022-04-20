@@ -6,12 +6,12 @@ let x = `<div class="col-sm-4 singleStatwrapper" onclick="route('services')">
 let statsStore = '';
 let path = {};
 let old_path = {};
-let base_path = '/rennovet';
+let base_path = '';
 let config;
 let version = 1;
 
 $(document).ready(()=>{
-    $.getJSON(`/rennovet/config.json?v=${version}`, function(response) {
+    $.getJSON(`/config.json?v=${version}`, function(response) {
         config = response;
         loadelements().then(startRennovet);
     });
@@ -30,7 +30,7 @@ $(document).ready(()=>{
 })
 
 function startRennovet(){
-    $.getJSON('/rennovet/stats.json',((stats)=>{
+    $.getJSON('/stats.json',((stats)=>{
         statsStore = stats;
         template_engine(x, stats, ".beforeafterexample").then(()=>{
             console.log('Loaded stats');
