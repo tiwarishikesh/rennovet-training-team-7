@@ -32,11 +32,13 @@ $(document).ready(()=>{
 function startRennovet(){
     $.getJSON('/stats.json',((stats)=>{
         statsStore = stats;
-        template_engine(x, stats, ".beforeafterexample").then(()=>{
+        template_engine(x, stats.temp, ".beforeafterexample").then(()=>{
             console.log('Loaded stats');
         })
+        template_engine(`<div class="col-sm-2 landingPageSingleServiceWrapper"><img src="{{img}}"  alt="Responsive image" srcset=""></div>`,statsStore.services,'landingPageservicesSection .container');
     }))
 }
+
 function loadelements() {
     return new Promise((resolve, reject) => {
         var promises = [];
@@ -62,8 +64,14 @@ function checkUrl(){
     if (x == path.href) {
         return false;
     }
+    if(window.location.pathname == "/"){
+        route('home');
+    }
+    slider.stopSlideShow();
     parseURL().then(() => {
-
+        if(path.parts[0] == "home"){
+            slider.startSlideShow();
+        }
     })
 }
 
@@ -159,4 +167,38 @@ let template_engine = function(identifier, replacements, callback) {
         callback ? /function\(|[\)\*\{\}]/.test(callback.toString()) ? callback(divTag) : $(callback).length ? $(callback).append(divTag) : console.log("html element doesn't exist") : console.log("Parameter missing");
         resolve(divTag);
     })
+}
+
+
+
+
+let slider = {
+    setSlide: function (slideNumber) {
+        this.currentSlide = slideNumber;
+        if(this.currentSlide < 0){
+            this.currentSlide = $(".slidercontainer img").length;
+        }else if(this.currentSlide > $(".slidercontainer img").length){
+            this.currentSlide = 1;
+        }
+        this.animateToSlide();
+    },
+    animateToSlide: function () {
+        $(".slidercontainer").css('left', $(".slidercontainer img").width()*-1*(this.currentSlide-1))
+    },
+    changeSlide: function (x) {        
+        this.setSlide(this.currentSlide + x);
+    },
+    startSlideShow: function () {
+        this.slideShow = setInterval(() => {
+            this.changeSlide(1);
+        }, this.slideTime);
+    },
+    stopSlideShow: function () {
+        clearInterval(this.slideShow);
+    },
+    slideShow: function () {
+        
+    },
+    slideTime: 5000,
+    currentSlide: 1
 }

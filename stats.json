@@ -1,3 +1,5 @@
+{
+    "test":
 [{
     "icon": "<i class='fa-brands fa-artstation'></i>",
     "name": "Some title naya",
@@ -27,4 +29,43 @@
     "icon": "<i class='fa-brands fa-artstation'></i>",
     "name": "Some title 6",
     "description": "Some details about it"
-}]
+}],
+"services": [
+    {
+        "img":"https://musings-on-art.org/sites/default/files/media/red-square_2660_lr.jpg"
+    },
+    {
+        "img":"https://musings-on-art.org/sites/default/files/media/red-square_2660_lr.jpg"
+    },
+    {
+        "img":"https://musings-on-art.org/sites/default/files/media/red-square_2660_lr.jpg"
+    },
+    {
+        "img":"https://musings-on-art.org/sites/default/files/media/red-square_2660_lr.jpg"
+    },
+    {
+        "img":"https://musings-on-art.org/sites/default/files/media/red-square_2660_lr.jpg"
+    },
+    {
+        "img":"https://musings-on-art.org/sites/default/files/media/red-square_2660_lr.jpg"
+    },
+    {
+        "img":"https://musings-on-art.org/sites/default/files/media/red-square_2660_lr.jpg"
+    },
+    {
+        "img":"https://musings-on-art.org/sites/default/files/media/red-square_2660_lr.jpg"
+    },
+    {
+        "img":"https://musings-on-art.org/sites/default/files/media/red-square_2660_lr.jpg"
+    },
+    {
+        "img":"https://musings-on-art.org/sites/default/files/media/red-square_2660_lr.jpg"
+    },
+    {
+        "img":"https://musings-on-art.org/sites/default/files/media/red-square_2660_lr.jpg"
+    },
+    {
+        "img":"https://musings-on-art.org/sites/default/files/media/red-square_2660_lr.jpg"
+    }
+]
+}

@@ -30,6 +30,9 @@ body{
     padding-right:0;
 }
 
+body, h1, h2, h3 , h4, h5, h6, p, a{
+    color:#555;
+}
 
 
 .landingBanner{
@@ -159,6 +162,7 @@ body{
 
 .landingPageSingleServiceWrapper{
     margin-bottom:33px;
+    aspect-ratio: 1;
 }
 
 .landingPageSingleServiceContainer{
@@ -215,21 +219,50 @@ input{
     letter-spacing: 2px;
     cursor: pointer;
 }
-.img-fluid img{
+.landingPageSingleServiceWrapper img{
     width: 100%;
 }
 .col-sm-3 img{
     width: 100%;
 }
-.col-sm-6 h1{
+
+.landingPageconsultsection{
+    margin-top:125px;
+    padding-top:125px;
+    border-top:1px solid #cecece;
+}
+
+.landingPageconsultsection h1{
     font-size: 45px;
     font-family: 'Noto Sans', sans-serif;
+    font-weight:100;
 }
-.col-sm-6 ul{
-   list-style-type:'-';
+
+.landingPageconsultsection ul{
+   list-style-type: none;
+    padding-left: 0;
 }
-.col-sm-6 ul li{
+.landingPageconsultsection ul li{
     font-size: 20px;
-    padding: 20px;
+    padding: 20px 0px 20px 0px;
     font-family: 'Noto Sans', sans-serif;
+}
+
+.sliderwrapper{
+    width:100%;
+    max-width:600px;
+    overflow:hidden;
+    position: relative;
+    aspect-ratio: 1;
+}
+
+.slidercontainer{
+    width:max-content;
+    position: absolute;
+    left: 0;
+    transition: 0.5s;
+}
+
+.slidercontainer img{
+    margin:0;
 }
