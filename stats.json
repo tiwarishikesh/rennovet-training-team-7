@@ -67,5 +67,14 @@
     {
         "img":"https://musings-on-art.org/sites/default/files/media/red-square_2660_lr.jpg"
     }
-]
+],
+    "home_slider": [{
+        "img": "/src/images/point1.jpg"
+    },
+    {
+        "img": "/src/images/point2.jpg"
+    },
+    {
+        "img": "/src/images/point3.jpg"
+    }]
 }

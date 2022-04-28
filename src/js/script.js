@@ -36,6 +36,7 @@ function startRennovet(){
             console.log('Loaded stats');
         })
         template_engine(`<div class="col-sm-2 landingPageSingleServiceWrapper"><img src="{{img}}"  alt="Responsive image" srcset=""></div>`,statsStore.services,'landingPageservicesSection .container');
+        template_engine(`<div style="display: inline-block"><img src="{{img}}"/></div>`, statsStore.home_slider, `.slidercontainer`);
     }))
 }
 

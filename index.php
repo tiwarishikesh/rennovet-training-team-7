@@ -10,9 +10,9 @@ $path = $_SERVER["REQUEST_URI"];
 $index = file_get_contents('src/html/index.html');
 
 if($path == "/" || $path == "/home"){
-    echo str_replace('{{title}}',"Home | Rennovet",file_get_contents('index.html'));
+    echo str_replace('{{title}}',"Home | Rennovet",$index);
 }else{
-    echo str_replace('{{title}}',"Not Found | Rennovet",file_get_contents('index.html'));
+    echo str_replace('{{title}}',"Not Found | Rennovet",$index);
 }
 
 

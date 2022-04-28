@@ -1,7 +1,7 @@
 {
     "ispwa": false,
     "serviceurl": "/service/",
-    "html_path": "/",
+    "html_path": "/src/html/",
     "components": {
         "home-content": ["appbody", "Loading home"]
         
