@@ -1,13 +1,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,500;1,400&family=Nunito&family=Roboto&family=Roboto+Slab:wght@500&family=Ubuntu:wght@300;400;500&family=Work+Sans:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300&display=swap');
 body{
     overflow-x: hidden;
     background:#efefef;
     font-family: 'Roboto', sans-serif !important;
 }
 
-
+img{
+    width:100%;
+}
 
 *{
     margin: 0;
@@ -265,4 +268,49 @@ input{
 
 .slidercontainer img{
     margin:0;
+}
+
+.landingPagelabelsection{
+    margin: 10px;
+    padding: 100px;
+    border-top: 1px solid grey;
+}
+
+.landingPagelabelsection h1{
+    font-family: 'Roboto', sans-serif; 
+    font-size: 40px;
+    font-weight: 200;
+}
+
+.landingPagelabelsection p{
+    font-family:'Noto Sans', sans-serif; 
+    font-size: 15px;
+    font-weight: 50;
+    padding: 10px;
+}
+.labelcontent .left{
+    width:50px;
+    float:left;
+    position:relative;
+    display:inline-block;
+}
+.labelcontent .right{
+    position:relative;
+    display:inline-block;
+    width:calc(100% - 50px);
+    float:right;
+}
+
+.labelcontent ul li{
+    list-style-type: none;
+}
+
+.NavBar ul{
+    list-style-type: none;
+    display:flex;
+    font-family: 'Radio Canada', sans-serif;
+    margin-top: 5px;
+}
+.NavBar ul li{
+    padding: 5px;
 }
