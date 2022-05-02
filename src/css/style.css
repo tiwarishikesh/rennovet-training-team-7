@@ -8,6 +8,29 @@ body{
     font-family: 'Roboto', sans-serif !important;
 }
 
+.NavBar{
+    display: flex;
+    width: 5vw;   
+}
+
+.Search{
+    position:fixed;
+    width:40vw;
+}
+.buttonSearch{
+    background: #999;
+    padding: 9px;
+    border-radius: 1000px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #dedede;
+    font-size: 18px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    position: fixed;
+    
+}
+
 img{
     width:100%;
 }
@@ -305,12 +328,3 @@ input{
     list-style-type: none;
 }
 
-.NavBar ul{
-    list-style-type: none;
-    display:flex;
-    font-family: 'Radio Canada', sans-serif;
-    margin-top: 5px;
-}
-.NavBar ul li{
-    padding: 5px;
-}
