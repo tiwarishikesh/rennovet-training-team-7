@@ -7,7 +7,37 @@
     <title>{{title}}</title>
 </head>
 <body>
-    <header></header>
+    <header>
+        <div class="container w-full">
+        <div class="col-sm-4 NavBar">
+            <div class="logo"><img src="/src/images/logo.jpg" alt=""></div>
+            </div>
+            <ul class="col-sm-2 NavList">
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact Us</li>
+            </ul>
+        <div class="col-sm-3 Search">
+             <input type="text" name="name" id="search">
+            </div>
+        <div class="col-sm-2 buttonSearch">
+            Search
+        </div>
+        <div class="col-sm-1 Menu">
+
+            <button class="Dropdown">
+    
+                <ul class="DropdownContent">
+                    <li><a href="#">Sign Up</a></li>
+        
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Logout</a></li>
+    </ul>
+</button>
+        </div>
+    </div>
+
+</header>
     <appbody>
         <home-content>
             
