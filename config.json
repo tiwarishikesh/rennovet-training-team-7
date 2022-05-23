@@ -3,8 +3,8 @@
     "serviceurl": "/service/",
     "html_path": "/src/html/",
     "components": {
-        "home-content": ["appbody", "Loading home"]
-        
+        "home-content": ["appbody", "Loading home"],
+        "service-content": ["appbody", "Loading home"]
     },
     "keys": {
         
