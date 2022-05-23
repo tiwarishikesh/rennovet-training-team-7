@@ -9,6 +9,12 @@ body{
     font-family: 'Roboto', sans-serif !important;
 }
 
+.NavBarHeader{
+    background-color: rgb(129, 126, 126);
+    position: absolute;
+    z-index: 1;
+}
+
 .NavBar{
     width: 6vw;
     height: 2px;
@@ -60,7 +66,7 @@ height: 100%;
 }
 
 .buttonSearch{
-    background: #999;
+    background: rgb(36, 34, 34);
     padding: 9px;
     border-radius: 1000px;
     text-transform: uppercase;
@@ -370,4 +376,3 @@ input{
     list-style-type: none;
     display:block;
 }
-
