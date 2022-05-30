@@ -10,7 +10,8 @@ let base_path = '';
 let config;
 let version = 1;
 
-$(document).ready(()=>{
+
+$(document).ready(() => {
     $.getJSON(`/config.json?v=${version}`, function(response) {
         config = response;
         loadelements().then(startRennovet);
@@ -29,13 +30,13 @@ $(document).ready(()=>{
     }, 50);
 })
 
-function startRennovet(){
-    $.getJSON('/stats.json',((stats)=>{
+function startRennovet() {
+    $.getJSON('/stats.json', ((stats) => {
         statsStore = stats;
-        template_engine(x, stats.temp, ".beforeafterexample").then(()=>{
+        template_engine(x, stats.temp, ".beforeafterexample").then(() => {
             console.log('Loaded stats');
         })
-        template_engine(`<div class="col-sm-2 landingPageSingleServiceWrapper"><img src="{{img}}"  alt="Responsive image" srcset=""></div>`,statsStore.services,'landingPageservicesSection .container');
+        template_engine(`<div class="col-sm-2 landingPageSingleServiceWrapper"><img src="{{img}}"  alt="Responsive image" srcset=""></div>`, statsStore.services, 'landingPageservicesSection .container');
         template_engine(`<div style="display: inline-block"><img src="{{img}}"/></div>`, statsStore.home_slider, `.slidercontainer`);
     }))
 }
@@ -60,17 +61,17 @@ function loadelements() {
     });
 }
 
-function checkUrl(){
+function checkUrl() {
     let x = window.location.href.toLowerCase();
     if (x == path.href) {
         return false;
     }
-    if(window.location.pathname == "/"){
+    if (window.location.pathname == "/") {
         route('home');
     }
     slider.stopSlideShow();
     parseURL().then(() => {
-        if(path.parts[0] == "home"){
+        if (path.parts[0] == "home") {
             slider.startSlideShow();
         }
     })
@@ -86,7 +87,7 @@ function route(x, y) {
         x = x.replace('&undefined', '');
         if (window.location.href.split(window.location.origin)[1].slice(1).replace('pwa/', '') !== x) {
             /* config.ispwa ? history.pushState(null, null, `/pwa/` + x) : history.pushState(null, null, `/` + x); */
-            history.pushState(null, null, base_path +`/` + x);
+            history.pushState(null, null, base_path + `/` + x);
         }
     } else if (y) {
         var temp = window.location.href.split(window.location.origin)[1].slice(1);

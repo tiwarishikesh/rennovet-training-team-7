@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,500;1,400&family=Nunito&family=Roboto&family=Roboto+Slab:wght@500&family=Ubuntu:wght@300;400;500&family=Work+Sans:ital,wght@1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
 body{
     overflow-x: hidden;
     background:#efefef;
@@ -44,19 +45,18 @@ body{
 }
 
 .DropdownContent{
-        position: relative;
-        opacity: 1;
-        pointer-events: none;
-        width:100px;
-        height: 100%;
+    position: relative;
+    opacity: 1;
+    pointer-events: none;
+    width:100px;
+    height: 100%;
 }
 
 .DropdownContent li{
-list-style-type: none;
-display: flex;
-width: 100%;
-height: 100%;
-
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    height: 100%;
 }
 
 .buttonSearch{
@@ -287,9 +287,11 @@ input{
     letter-spacing: 2px;
     cursor: pointer;
 }
+
 .landingPageSingleServiceWrapper img{
     width: 100%;
 }
+
 .col-sm-3 img{
     width: 100%;
 }
@@ -310,6 +312,7 @@ input{
    list-style-type: none;
     padding-left: 0;
 }
+
 .landingPageconsultsection ul li{
     font-size: 20px;
     padding: 20px 0px 20px 0px;
@@ -353,12 +356,14 @@ input{
     font-weight: 50;
     padding: 10px;
 }
+
 .labelcontent .left{
     width:50px;
     float:left;
     position:relative;
     display:inline-block;
 }
+
 .labelcontent .right{
     position:relative;
     display:inline-block;
@@ -371,3 +376,55 @@ input{
     display:block;
 }
 
+.servicePage{
+    height: 400px;
+    width: 100%;
+    border: 1px solid #d6caca;
+    display: flex;
+    border-radius: 10px;
+
+}
+.servicePageLeft{
+    height: 400px;
+    width: 60%;
+    padding:15px;
+     
+}
+.servicePageLeft h1{
+    display: inline-block;
+    line-height: 0.9;
+    font-family: 'Syncopate', sans-serif;
+    text-transform: uppercase;
+    background: radial-gradient(
+        circle farthest-corner at center center,
+        white,
+        #111
+    ) no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.colorful{
+    background: linear-gradient(90deg, violet, indigo, #27277a, #297829, #e3e34d, #e14444);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.servicePageLeft p{
+    line-height: 1.8;
+}
+
+.servicePageright{
+    height: 350px;
+    width: 40%;
+    margin-top: 25px ;
+    text-align: center;
+    border: 1px solid #c2bbbb;
+    border-right:none;
+
+}
+.servicePageInfo{
+    height: 600px;
+    width: 100%;
+    border: 1px solid black;
+}
