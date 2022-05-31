@@ -437,3 +437,86 @@ input {
     width: 100%;
     border: 1px solid black;
 }
+
+.ServiceMiddlePage{
+    width: 100%;
+    border: 1px solid #d6caca;
+    border-radius: 10px;
+}
+
+.ServiceBox1{
+    border: 2px solid;
+    width:20%;
+    margin: 20px 35px 75px 40px;
+    height: 40%;
+}
+
+.ServiceBox2{
+    border: 2px solid;
+    width: 20%;
+    margin: 40px 100px 65px 150px;
+}
+
+.ServiceBox3{
+    border: 2px solid;
+    width: 20%;
+    margin: 60px 40px 55px 50px;
+}
+
+.MiddlePageContentRight h1{
+    display: inline-block;
+    line-height: 0.9;
+    font-family: 'Syncopate', sans-serif;
+    text-transform: uppercase;
+    background: radial-gradient( circle farthest-corner at center center, white, #111) no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 30px;
+}
+
+.MiddlePageContentRight p{
+    line-height: 2;
+    padding: 20px;
+}
+
+.LastPageContainer{
+    width: 100%;
+    border: 1px solid #d6caca;
+    display: flex;
+    border-radius: 10px;
+}
+
+
+.LastPageLeft h1{
+    display: inline-block;
+    line-height: 0.9;
+    font-family: 'Syncopate', sans-serif;
+    text-transform: uppercase;
+    background: radial-gradient( circle farthest-corner at center center, white, #111) no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 50px;
+    
+}
+
+.LastPageLeft img{
+    padding: 30px;
+}
+
+.LastPageRight ul{
+    list-style-type: none;
+    margin-top: 30px;
+    padding: 30px;
+    margin-left: 60px;
+    font-size: large;
+    line-height: 5;
+}
+
+.LastPageRight ul li{
+    padding: 5px;
+}
+
+.progress{
+    width: 70%;
+    display: flex;
+}
